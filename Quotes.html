@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <title>RANDOM QUOTES GENERATOR</title>
+    </head>
+    <style>
+        div{
+            padding: auto;
+            border: green solid 5px;
+            border-radius: 5px;
+            background-color: antiquewhite;
+            align-items: center;
+            text-align: center;
+        }
+        body{
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+            background-image: url(back.jpg);
+        }
+        button{
+        background-color: green;
+        color: white;
+        text-align: center;
+        }
+        #mes{
+            font-size: xx-large;
+            border-radius: 5px;
+            background-color: antiquewhite;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+    <body>
+        <div>
+        <h1 align="center">QUOTES FOR A DAY</h1>
+        <p id="mes"></p>
+            <button align="center" style="font-size: larger;" onclick="document.getElementById('mes').innerHTML=quotes()">CLICK HERE :))</button>
+        </div>
+        <script>
+            function ran(min,max){
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+            function quotes(event){
+                let messages=["Start each day with a grateful heart.",
+"Be the reason someone smiles today.",
+"Do what makes you happy.",
+"Keep going, you’re doing great.",
+"Every day is a fresh start.",
+"Believe in yourself.",
+"Happiness is a choice.",
+"You are stronger than you think.",
+"Kindness costs nothing.",
+"Dream big, work hard.",
+"Take it one step at a time.",
+"You’ve got this.",
+"Small steps lead to big changes.",
+"Smile, it’s contagious.",
+"Progress, not perfection.",
+"Trust the process.",
+"Let go and grow.",
+"Enjoy the little things.",
+"Keep it simple.",
+"Your only limit is you.",
+"Do something today that your future self will thank you for.",
+"Focus on the good.",
+"Find joy in the journey.",
+"Positive mind, positive life.",
+"It’s a good day to have a good day.",
+"One day at a time.",
+"You are enough.",
+"Take time to relax.",
+"Learn from yesterday, live for today.",
+"Success is a series of small wins.",
+"Stay humble, work hard.",
+"Life is short, make it sweet.",
+"You are capable of amazing things.",
+"Everything happens for a reason.",
+"Do what you can with what you have.",
+"Be kind to yourself.",
+"Create your own sunshine.",
+"Choose happiness.",
+"Make today count.",
+"Believe in the magic of new beginnings.",
+"Love yourself first.",
+"Success is no accident.",
+"Stay positive, work hard, make it happen.",
+"Be a light in someone’s life.",
+"Don’t give up.",
+"Find beauty in the ordinary.",
+"Be fearless in the pursuit of what sets your soul on fire.",
+"The best is yet to come.",
+"Change is the only constant.",
+"Take a deep breath and start again.",
+"Gratitude changes everything.",
+"Inhale confidence, exhale doubt.",
+"Believe in the power of positivity.",
+"Do what you love.",
+"Happiness is found within.",
+"Be your best self.",
+"You make the world a better place just by being in it.",
+"Keep your head up.",
+"Choose joy.",
+"Turn setbacks into comebacks.",
+"Life is what you make it.",
+"Today is a new day.",
+"Don’t wait for the perfect moment; take the moment and make it perfect.",
+"Kindness is always in style.",
+"Stay true to yourself.",
+"Every accomplishment starts with the decision to try.",
+"Be happy with what you have while working for what you want.",
+"You are your best investment.",
+"Live simply, dream big.",
+"Happiness blooms from within.",
+"Celebrate small victories.",
+"Focus on progress, not perfection.",
+"Life is better when you’re laughing.",
+"Good things take time.",
+"Embrace the journey.",
+"Your vibe attracts your tribe.",
+"Never stop learning.",
+"Your attitude determines your direction.",
+"Live in the moment.",
+"Don’t be afraid to stand out.",
+"The best view comes after the hardest climb.",
+"Turn your dreams into reality.",
+"Stay curious.",
+"Love the life you live.",
+"Be present, not perfect.",
+"You have the power to create change.",
+"It’s never too late to be who you might have been.",
+"Chase your dreams.",
+"Believe in the good.",
+"Make yourself proud.",
+"Life is an adventure.",
+"Choose to be optimistic.",
+"Don’t count the days; make the days count.",
+"Let your light shine.",
+"Good vibes only.",
+"Be grateful for today.",
+"Dream, believe, achieve.",
+"Focus on what matters.",
+"Life is beautiful.",
+"Stay positive, stay hopeful."];
+                let i=ran(0,3);
+                return messages[i];
+            }
+        </script>
+    </body>
+</html>
